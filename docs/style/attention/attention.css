@@ -81,7 +81,6 @@ html, body {
 }
 
 #main #main_frame #scroll_frame {
-  overflow: scroll;
   width: 70%;
   height: 90%;
   padding: 10px 30px 10px 30px;
@@ -101,7 +100,26 @@ html, body {
           flex-direction: column;
 }
 
-#main #main_frame #scroll_frame #btn_frame {
+#main #main_frame #scroll_frame #scroller {
+  overflow-y: scroll;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#main #main_frame #scroll_frame #scroller #btn_frame {
   margin: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -118,7 +136,7 @@ html, body {
           flex-direction: row;
 }
 
-#main #main_frame #scroll_frame #redo_btn {
+#main #main_frame #scroll_frame #scroller #redo_btn {
   cursor: pointer;
   color: #ffffff;
   font-size: 20px;
@@ -142,12 +160,12 @@ html, body {
           align-items: center;
 }
 
-#main #main_frame #scroll_frame #redo_btn:hover {
+#main #main_frame #scroll_frame #scroller #redo_btn:hover {
   background: -webkit-gradient(linear, left top, left bottom, from(#3565bf), to(#7dd4d7));
   background: linear-gradient(#3565bf, #7dd4d7);
 }
 
-#main #main_frame #scroll_frame #redo_btn:focus {
+#main #main_frame #scroll_frame #scroller #redo_btn:focus {
   outline: 0;
 }
 
