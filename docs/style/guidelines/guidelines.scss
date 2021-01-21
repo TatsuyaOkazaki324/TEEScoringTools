@@ -39,7 +39,7 @@ a{
     }
 }
 #main{
-    margin: 65px 0 35px 0;
+    margin: 35px 0 35px 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -53,15 +53,15 @@ a{
         display: flex;
         justify-content: center;
         align-items: center;
-        #form_frame{
-            padding: 20px;
+        #sentence_frame{
+            padding: 5px 20px 5px 20px;
             display: flex;
             justify-content: center;
             align-items: center;
             flex-direction: column;
-            .select_frame{
-                margin: 10px;
-                padding: 20px;
+            .content_frame{
+                margin: 20px 0 20px 0;
+                padding: 5px 20px 5px 20px;
                 border-radius: 10px;
                 background: #142C44;
                 box-shadow: inset 5px 5px 10px #08121b,
@@ -70,48 +70,6 @@ a{
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
-                select::-ms-expand {
-                    display: none;
-                }
-                select {
-                    cursor: pointer;
-                    -webkit-appearance: none;
-                    -moz-appearance: none;
-                    appearance: none;
-                    margin: 10px;
-                    padding: 7px 50px 7px 50px;
-                    font-size: 93%;
-                    font-weight: 600;
-                    line-height: 1.1em;
-                    border-radius: 10px;
-                    border: none;
-                    background-color: #041C34;
-                    color: #F9F2E4;
-                    &:focus {
-                        outline:0;
-                    }
-                }
-            }
-            #submit_btn{
-                cursor: pointer;
-                margin: 10px;
-                padding: 10px 30px 10px 30px;
-                border: none;
-                border-radius: 20px;
-                background: linear-gradient(145deg, #152f49, #12283d);
-                box-shadow:  5px 5px 10px #08121b,
-                            -5px -5px 10px #20466d;
-                color: #F9F2E4;
-                font-size: 93%;
-                font-weight: 600;
-                &:hover{
-                    background: #142C44;
-                    box-shadow: inset 5px 5px 10px #08121b,
-                                inset -5px -5px 10px #20466d;
-                }
-                &:focus {
-                    outline:0;
-                }
             }
         }
     }

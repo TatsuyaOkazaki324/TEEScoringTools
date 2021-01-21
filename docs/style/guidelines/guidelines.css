@@ -61,7 +61,7 @@ a {
 }
 
 #main {
-  margin: 65px 0 35px 0;
+  margin: 35px 0 35px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -91,8 +91,8 @@ a {
           align-items: center;
 }
 
-#main #main_frame #form_frame {
-  padding: 20px;
+#main #main_frame #sentence_frame {
+  padding: 5px 20px 5px 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -108,9 +108,9 @@ a {
           flex-direction: column;
 }
 
-#main #main_frame #form_frame .select_frame {
-  margin: 10px;
-  padding: 20px;
+#main #main_frame #sentence_frame .content_frame {
+  margin: 20px 0 20px 0;
+  padding: 5px 20px 5px 20px;
   border-radius: 10px;
   background: #142C44;
   -webkit-box-shadow: inset 5px 5px 10px #08121b, inset -5px -5px 10px #20466d;
@@ -128,54 +128,6 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-}
-
-#main #main_frame #form_frame .select_frame select::-ms-expand {
-  display: none;
-}
-
-#main #main_frame #form_frame .select_frame select {
-  cursor: pointer;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  margin: 10px;
-  padding: 7px 50px 7px 50px;
-  font-size: 93%;
-  font-weight: 600;
-  line-height: 1.1em;
-  border-radius: 10px;
-  border: none;
-  background-color: #041C34;
-  color: #F9F2E4;
-}
-
-#main #main_frame #form_frame .select_frame select:focus {
-  outline: 0;
-}
-
-#main #main_frame #form_frame #submit_btn {
-  cursor: pointer;
-  margin: 10px;
-  padding: 10px 30px 10px 30px;
-  border: none;
-  border-radius: 20px;
-  background: linear-gradient(145deg, #152f49, #12283d);
-  -webkit-box-shadow: 5px 5px 10px #08121b, -5px -5px 10px #20466d;
-          box-shadow: 5px 5px 10px #08121b, -5px -5px 10px #20466d;
-  color: #F9F2E4;
-  font-size: 93%;
-  font-weight: 600;
-}
-
-#main #main_frame #form_frame #submit_btn:hover {
-  background: #142C44;
-  -webkit-box-shadow: inset 5px 5px 10px #08121b, inset -5px -5px 10px #20466d;
-          box-shadow: inset 5px 5px 10px #08121b, inset -5px -5px 10px #20466d;
-}
-
-#main #main_frame #form_frame #submit_btn:focus {
-  outline: 0;
 }
 
 #footer {
@@ -206,4 +158,4 @@ a {
       -ms-flex-direction: column;
           flex-direction: column;
 }
-/*# sourceMappingURL=index.css.map */
+/*# sourceMappingURL=guidelines.css.map */

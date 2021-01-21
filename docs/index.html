@@ -19,26 +19,35 @@
     <body id="body">
         <header id="header">
             <div id="header_frame">
-                <img style="width: 400px;" src="./image/title.png">
+                <img id="header_title" src="./image/title.png">
             </div>
         </header>
         <main id="main">
             <div id="main_frame">
-                <div id="form_frame">
-                    <span>愛知県教員採用試験【教職・教養】の採点を自動化できます。</span>
-                    <span style="margin-bottom: 15px;">間違えた回答は赤色になります。</span>
-                    <span style="font-size: 20px; font-weight: 700;">採点する年を選択</span>
-                    <div id="btn_frame">
-                        <button class="year_btn" type="button" onclick="location.href='./scoring.html#2019'">2019</button>
-                        <button class="year_btn" type="button" onclick="location.href='./scoring.html#2018'">2018</button>
-                        <button class="year_btn" type="button" onclick="location.href='./scoring.html#2017'">2017</button>
+                <form action="./scoring.html" method="GET">
+                    <div id="form_frame">
+                        <div class="select_frame">
+                            <span>自治体を選択</span>
+                            <select name="municipality" id="select_m">
+                                <option value="aichi">愛知県</option>
+                            </select>
+                        </div>
+                        <div class="select_frame">
+                            <span>実施年を選択</span>
+                            <select name="year" id="select_y">
+                                <option value="2019">2019年</option>
+                                <option value="2018">2018年</option>
+                                <option value="2017">2017年</option>
+                            </select>
+                        </div>
+                        <input id="submit_btn" type="submit" value="テストを受ける">
                     </div>
-                </div>
+                </form>
             </div>
         </main>
         <footer id="footer">
             <div id="footer_frame">
-                <a class="anker" href="./attention.html">注意事項</a>
+                <a href="./guidelines.html">注意事項</a>
                 © Copyright 2021 T/2E Scoring.
             </div>
         </footer>
