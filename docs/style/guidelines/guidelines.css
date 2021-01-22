@@ -89,6 +89,10 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 #main #main_frame #sentence_frame {
@@ -128,6 +132,29 @@ a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+}
+
+#main #main_frame #br_btn {
+  cursor: pointer;
+  margin: 10px 20px 20px 20px;
+  padding: 10px 30px 10px 30px;
+  border: none;
+  border-radius: 20px;
+  background: linear-gradient(145deg, #152f49, #12283d);
+  -webkit-box-shadow: 5px 5px 10px #08121b, -5px -5px 10px #20466d;
+          box-shadow: 5px 5px 10px #08121b, -5px -5px 10px #20466d;
+  font-size: 97%;
+  font-weight: 700;
+}
+
+#main #main_frame #br_btn:hover {
+  background: #142C44;
+  -webkit-box-shadow: inset 5px 5px 10px #08121b, inset -5px -5px 10px #20466d;
+          box-shadow: inset 5px 5px 10px #08121b, inset -5px -5px 10px #20466d;
+}
+
+#main #main_frame #br_btn:focus {
+  outline: 0;
 }
 
 #footer {

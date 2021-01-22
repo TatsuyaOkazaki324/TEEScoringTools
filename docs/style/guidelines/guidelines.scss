@@ -53,6 +53,7 @@ a{
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
         #sentence_frame{
             padding: 5px 20px 5px 20px;
             display: flex;
@@ -70,6 +71,26 @@ a{
                 justify-content: center;
                 align-items: center;
                 flex-direction: column;
+            }
+        }
+        #br_btn{
+            cursor: pointer;
+            margin: 10px 20px 20px 20px;
+            padding: 10px 30px 10px 30px;
+            border: none;
+            border-radius: 20px;
+            background: linear-gradient(145deg, #152f49, #12283d);
+            box-shadow:  5px 5px 10px #08121b,
+                        -5px -5px 10px #20466d;
+            font-size: 97%;
+            font-weight: 700;
+            &:hover{
+                background: #142C44;
+                box-shadow: inset 5px 5px 10px #08121b,
+                            inset -5px -5px 10px #20466d;
+            }
+            &:focus {
+                outline:0;
             }
         }
     }

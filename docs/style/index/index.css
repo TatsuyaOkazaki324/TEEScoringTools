@@ -89,6 +89,14 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#main #main_frame #main_discription {
+  margin-top: 10px;
 }
 
 #main #main_frame #form_frame {

@@ -53,6 +53,10 @@ a{
         display: flex;
         justify-content: center;
         align-items: center;
+        flex-direction: column;
+        #main_discription{
+            margin-top: 10px;
+        }
         #form_frame{
             padding: 20px;
             display: flex;
